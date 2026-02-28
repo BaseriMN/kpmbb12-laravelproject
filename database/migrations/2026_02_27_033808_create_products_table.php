@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('tb_product', function (Blueprint $table) {
             $table->id('id_product');
             $table->string('nama_product', 150); //default length 255
-            $table->integer('harga');
+            $table->float('harga');
             $table->text('deskripsi_product');
             $table->integer('id_kategori');
             $table->timestamps();
