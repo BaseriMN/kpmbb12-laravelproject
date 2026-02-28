@@ -22,7 +22,27 @@ class ProductController extends Controller
         ]);
     }
 
-    public function addProduct(){
-        return view('pages.addproduct');
+    // untuk memaparkan halaman form data
+    public function create(){        
+        return view('pages.product.add');
+    }
+
+    // untuk menyimpan data yang dihantar dari form
+    public function store(Request $request){
+        $request->validate([
+            'nama_product'=>'required',
+            'harga'=>'required',
+            'deskripsi_product'=>'required'
+        ]);
+
+        // simpan data ke database
+        product::create([
+            'nama_product'=>$request->nama_product,
+            'harga'=>$request->harga,
+            'deskripsi_product'=>$request->deskripsi_product,
+            'id_kategori'=>'1'
+        ]); 
+        
+        return redirect('/product')->with('success', 'Product berjaya ditambah!');
     }
 }
