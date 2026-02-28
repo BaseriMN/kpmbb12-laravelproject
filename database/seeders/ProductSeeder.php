@@ -36,6 +36,7 @@ class ProductSeeder extends Seeder
                 'id_kategori'=>'2',
                 'created_at'=>now()
             ],
+            /*
             [
                 'nama_product'=>'DJI Mini 3 Pro',
                 'harga'=>'3899',
@@ -217,7 +218,7 @@ class ProductSeeder extends Seeder
                 'deskripsi_product'=>'Set propeller gantian original',
                 'id_kategori'=>'6',
                 'created_at'=>now()
-            ],
+            ], */
             [
                 'nama_product'=>'DJI Charging Hub',
                 'harga'=>'299',
