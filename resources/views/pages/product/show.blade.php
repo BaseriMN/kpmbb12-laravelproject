@@ -4,7 +4,7 @@
 <h1>Daftar Product</h1>
 <hr>
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <button type="button" class="btn btn-primary mb-3">Tambah Product</button>
+  <a href="/product/create" type="button" class="btn btn-primary mb-3">Tambah Product</a>
 </div>
 
 <div class="card">
