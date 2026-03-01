@@ -23,3 +23,4 @@ Route::view('/contactus', 'pages.contact');
 Route::get('/product', [ProductController::class, 'index']);
 Route::get('/product/create', [ProductController::class, 'create']); // memaparkan halaman form data
 Route::post('/product' , [ProductController::class, 'store']); // untuk menyimpan data yang dihantar dari form
+Route::get('/product/{id}', [ProductController::class, 'show']); // untuk memaparkan detail data berdasarkan id
