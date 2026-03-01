@@ -1,12 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
-<h1>Daftar Product</h1>
+<h2>Daftar Product</h2>
 <hr>
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <a href="/product/create" type="button" class="btn btn-primary mb-3">Tambah Product</a>
 </div>
-
+  @if (session('success'))
+    <div class="alert alert-success">{{ session('success') }}</div>
+  @endif
 <div class="card">
   <div class="card-header">
     Daftar Product
@@ -39,6 +41,7 @@
         <td>
           <button type="button" class="btn btn-danger">Delete</button>
           <button type="button" class="btn btn-warning">Edit</button>
+          <a href="/product/{{$item->id_product}}" type="button" class="btn btn-info">Detail</a>
         </td>
       </tr>
     @endforeach
