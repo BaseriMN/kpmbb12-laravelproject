@@ -13,5 +13,5 @@
 
 
 <div class="footer">
-    <span>Copyright BaseriMN Tutorial Laravel</span>
+    <span>Copyright KPMBB Design by Muhamad Baseri</span>
 </div>
